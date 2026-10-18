@@ -253,6 +253,7 @@ select {
       <option value="meantone">Mesotonico ¼ di comma</option>
       <option value="werck">Werckmeister III (1691)</option>
       <option value="just">Intonazione giusta (da Do)</option>
+      <option value="justD">Intonazione giusta (da Re)</option>
     </select>
   </div>
   <div>
@@ -294,7 +295,10 @@ const TEMPER = {
   pyth:    [0,13.69,-3.91,9.78,-7.82,1.96,15.64,-1.96,11.73,-5.87,7.82,-9.78],
   meantone:[0,-10.26,-6.84,-3.42,-13.69,3.42,-6.84,-3.42,-16.84,-10.26,6.84,-13.69],
   werck:   [0,-9.775,-3.91,-5.865,-7.82,-1.955,-11.73,-1.955,-13.685,-5.865,-3.91,-9.775],
-  just:    [0,11.73,-3.91,15.64,-13.69,1.96,13.69,-1.96,11.73,-15.64,17.60,-11.73]
+  just:    [0,11.73,-3.91,15.64,-13.69,1.96,13.69,-1.96,11.73,-15.64,17.60,-11.73],
+  // Intonazione giusta con tonica Re — ratios puri (1/1 9/8 5/4 4/3 3/2 5/3 15/8) ruotati su Re
+  // C    C#      D    Eb      E      F     F#      G     G#     A     Bb      B
+  justD: [-3.91,-11.73,  0, 11.73,  3.91, 15.64,-13.69, -1.96,  9.78,  1.96, 13.69,-15.64]
 };
 
 /* ─── STATE ─── */
